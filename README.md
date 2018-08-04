@@ -33,7 +33,6 @@ To run unit test, run following command
 
 ## Example Data
 
-```bash
 * {
 	"order_id": 1, 
 	"customer": "UNILEVER",  
@@ -63,4 +62,3 @@ To run unit test, run following command
 	"customer": "FORD",  
 	"packages": ["STANDOUT"]
 }
-```
