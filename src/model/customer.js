@@ -3,8 +3,4 @@ export default class {
       this.id = customer.id;
       this.name = customer.name;
     }
-  
-    get ModelName() {
-      return "Customer";
-    }
   }
