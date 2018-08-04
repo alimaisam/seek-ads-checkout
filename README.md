@@ -25,3 +25,10 @@ To run unit test, run following command
 ```bash
 - yarn test
 ```
+--
+
+## Available APIs
+- GET `/cart` : Generates the Cart, calculates the cart value and returns the response
+- POST `/checkout` : Takes cart data as input from user, calculates the cart value and returns the response
+
+## Example Data
