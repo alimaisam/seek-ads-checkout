@@ -13,3 +13,15 @@ git clone https://github.com/alimaisam/seek-ads-checkout.git
 ```
 
 ## Server
+
+To start the server, run following commands
+```bash
+- yarn
+- yarn start
+```
+
+## Test
+To run unit test, run following command
+```bash
+- yarn test
+```
