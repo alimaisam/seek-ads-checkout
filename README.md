@@ -32,3 +32,35 @@ To run unit test, run following command
 - POST `/checkout` : Takes cart data as input from user, calculates the cart value and returns the response
 
 ## Example Data
+
+```bash
+- {
+	"order_id": 1, 
+	"customer": "UNILEVER",  
+	"packages": ["CLASSIC", "CLASSIC", "CLASSIC", "PREMIUM"]
+}
+
+- {
+	"order_id": 2, 
+	"customer": "JOBSTREET",  
+	"packages": ["CLASSIC", "STANDOUT", "PREMIUM"]
+}
+
+- {
+	"order_id": 3, 
+	"customer": "APPLE",  
+	"packages": ["STANDOUT", "STANDOUT", "STANDOUT", "PREMIUM"]
+}
+
+- {
+	"order_id": 4, 
+	"customer": "NIKE",  
+	"packages": ["PREMIUM", "PREMIUM", "PREMIUM", "PREMIUM"]
+}
+
+- {
+    "order_id": 5, 
+	"customer": "FORD",  
+	"packages": ["STANDOUT"]
+}
+```
