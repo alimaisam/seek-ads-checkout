@@ -25,7 +25,7 @@ To run unit test, run following command
 ```bash
 - yarn test
 ```
---
+----
 
 ## Available APIs
 - GET `/cart` : Generates the Cart, calculates the cart value and returns the response
