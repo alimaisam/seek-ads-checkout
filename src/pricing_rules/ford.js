@@ -8,6 +8,8 @@ const rule = packages => {
     var count = 0;
     var filteredArray = [];
     for( let key in fordDeal ) {
+        // for classic ad give discount of 5 for 4,
+        // by removing last package if count reaches 5
         if (_.isEqual(fordDeal[key], PackageType.CLASSIC)) {
             filteredArray.push(fordDeal[key]);
             count++;
@@ -15,16 +17,19 @@ const rule = packages => {
                 filteredArray.pop();
                 count = 0;
             }
+        // if package type is standout then add discounted price
         } else if (_.isEqual(fordDeal[key], PackageType.STANDOUT)) {
             fordDeal[key].price = 309.99;
             filteredArray.push(fordDeal[key]);
         } 
     }
 
+    //create an array for premium ads
     var premiumAds = packages.filter(item => {
         return item.id == PackageType.PREMIUM.id;
     })
 
+    // give discount on premium ads if there are 3 or more ads in the package
     if (premiumAds.length >= 3) {
         for (let key in fordPremiumDeal) {
             if (_.isEqual(fordPremiumDeal[key], PackageType.PREMIUM)) {

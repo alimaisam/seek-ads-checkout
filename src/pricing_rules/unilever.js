@@ -5,6 +5,9 @@ const rule = packages => {
     var cart_value = 0;
     var count = 0;
     var filteredArray = [];
+
+    //check for classic ads and when count reaches 3,
+    //remove last added package to give discount of 3 for 2
     for( let key in packages ) {
         if (_.isEqual(packages[key], PackageType.CLASSIC)) {
             filteredArray.push(packages[key]);

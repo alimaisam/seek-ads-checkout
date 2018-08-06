@@ -4,6 +4,7 @@ import Nike from './nike';
 import Ford from './ford';
 import Default from './default';
 
+// when a new deal is created for a company just add a property here
 const applyDeal = {
 
     unilever: (packages) => { return Unilever(packages) },
