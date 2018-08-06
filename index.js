@@ -10,11 +10,13 @@ app.get("/", (req, res) => {
     res.send('This is a server for Seek Ads Checkout');
 });
 
+// generates the cart and calculates the cart value
 app.get("/cart", (req, res) => {
     let cart = cart_generator.generate();
     res.send({cart, total_price: cart.calculateCartValue()});
 })
 
+//get input from user to generate the cart and calculates the cart value
 app.post("/checkout", (req, res) => {
     let cart = cart_generator.generateFromRequestBody(req.body);
     res.send({cart, total_price: cart.calculateCartValue()});

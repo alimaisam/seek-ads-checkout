@@ -4,8 +4,4 @@ export default class {
     this.name = adPackage.name;
     this.price = adPackage.price;
   }
-
-  get ModelName() {
-    return "Package";
-  }
 }
