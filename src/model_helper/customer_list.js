@@ -18,6 +18,10 @@ let customers = {
     JOBSTREET: {
         id: 'jobstreet',
         name: 'JOBSTREET',
+    },
+    XYZ: {
+        id: 'xyz',
+        name: 'XYZ'
     }
 }
 

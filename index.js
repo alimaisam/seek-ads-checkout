@@ -1,6 +1,7 @@
 import express from "express";
 import bodyParser from "body-parser";
 import cart_generator from "./src/lib/cart_generator";
+import Cart from './src/model/cart'
 
 const app = express();
 app.use(bodyParser.json());
@@ -13,7 +14,8 @@ app.get("/", (req, res) => {
 // generates the cart and calculates the cart value
 app.get("/cart", (req, res) => {
     let cart = cart_generator.generate();
-    res.send({cart, total_price: cart.calculateCartValue()});
+    //console.log(cart);
+    res.send({cart, total_price: Cart.calculateCartValue(cart)});
 })
 
 //get input from user to generate the cart and calculates the cart value
